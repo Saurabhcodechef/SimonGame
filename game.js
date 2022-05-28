@@ -28,6 +28,7 @@ function checkAnswer(currentLevel){
         setTimeout(function(){
             $('body').removeClass('game-over')
         },200)
+        startOver();
     }
 }
 $(".btn").on('click',function(){
@@ -64,7 +65,7 @@ function playSound(clickButton){
 }
 
 function startOver(){
-    level=0;
+    level=-1;
     gamePattern=[];
     started = false;
 }
